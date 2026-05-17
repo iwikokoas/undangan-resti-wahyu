@@ -1,56 +1,63 @@
 {
   "pegantin": {
     "wanita": {
-      "foto": "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/ikok.jpg",
-      "panggilan": "Rizki",
-      "nama": "Rizki Dwi Putra",
-      "bapak": "Bapak Toni Gunawan (Alm)",
-      "ibu": "Tine Martinia"
+      "foto": "/images/gallery/_AW_4527.JPG.jpeg",
+      "panggilan": "Resti",
+      "nama": "Resti Ayu Deriani",
+      "bapak": "Bapak Ade Sunarya",
+      "ibu": "Ibu Ani Wahyuni",
+      "anak_ke": "Putri Ke-2"
     },
     "pria": {
-      "foto": "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/gege.jpg",
-      "panggilan": "Gina",
-      "nama": "Gina Destiana",
-      "bapak": "Bapak Dedi Supriadi (Alm)",
-      "ibu": "Teti Heriati"
+      "foto": "/images/gallery/_AW_4571.JPG.jpeg",
+      "panggilan": "Wahyu",
+      "nama": "Wahyu Rahmatullah, S.Pd",
+      "bapak": "Bapak Iyan Supyanto",
+      "ibu": "Ibu Ika Kartika",
+      "anak_ke": "Putra Ke-2"
     }
   },
   "audio_url": "https://slametandfatma.wedding/audio/myaudio.mp3",
-  "tanggal_pernikahan": "05 Oktober 2025",
-  "thumbnail_image_url": "https://slametandfatma.wedding/galeri/nikahfix.jpg",
-  "url_video": "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/video2.mp4",
-  "intro": "Setelah Rizki dan Gina dipertemukan dalam situasi yang tepat, di mana keduanya telah siap untuk memulai hubungan bersama, tibalah mereka di awal perjalanan baru menuju pernikahan.",
-  "breaking_news_img": "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/rizki%20&%20gina%20(1).jpg",
-  "breaking_news_content": "<p>Halo! Karena kalian adalah orang penting yang mengisi hari-hari kami, kami ingin mengabarkan bahwa kami akan segera menikah! &lt;3 </p> <p className=\"mt-4\">Kami sangat bersyukur dapat berbagi kabar bahagia ini dan berharap momen spesial tersebut menjadi awal dari perjalanan baru yang penuh cinta, kebahagiaan, dan berkah.</p> <p className=\"mt-4\">Kami juga sangat mengharapkan doa terbaik dari teman dan kerabat semua untuk kelancaran pernikahan kami serta hari-hari bahagia setelahnya.</p> <p className=\"mt-4\">Dengan penuh cinta,</p> <p>The bride and groom &lt;3</p>",
+  "tanggal_pernikahan": "04 Juni 2026",
+  "waktu_acara": "10.00 - 15.00 WIB",
+  "lokasi_acara": "Jl. Otista Gg. Pembangunan No. 40 Rt 04/01 Kel. Nanggeleng Kota Sukabumi",
+  "thumbnail_image_url": "/images/gallery/_AW_4373.JPG.jpeg",
+  "url_video": "/video/videonya.mp4",
+  "intro": "Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami. Atas kehadiran dan do'a restu Bapak/Ibu/Saudara/i kami ucapkan terima kasih.",
+  "breaking_news_img": "/images/gallery/_AW_4439.JPG.jpeg",
+  "breaking_news_content": "<p>Assalamu'alaikum Warahmatullahi Wabarakatuh</p><p className=\"mt-4\">Dengan memohon rahmat dan ridho Allah SWT kami bermaksud menyelenggarakan pernikahan putra-putri kami.</p><p className=\"mt-4\">Atas kehadiran dan do'a restu Bapak/Ibu/Saudara/i kami ucapkan terima kasih.</p><p className=\"mt-4\">Wasalamu'alaikum Warahmatullahi Wabarakatuh</p><p className=\"mt-4\">Kami yang berbahagia:</p><p>Kel. Bpk. Ade Sunarya & Ibu Ani Wahyuni</p><p>Kel. Bpk. Iyan Supyanto & Ibu Ika Kartika</p>",
   "love_story": [
     {
-      "image_url": "https://slametandfatma.wedding/galeri/story1.jpeg",
+      "image_url": "/images/gallery/_AW_4428.JPG.jpeg",
       "title": "Episode 1: How We Met Each Other that Time",
-      "description": "Slamet dan Fatma pertama kali bertemu pada tahun 2015 sebagai teman satu regu saat masa orientasi siswa Sekolah Menengah Kejuruan."
+      "description": "Resti dan Wahyu pertama kali bertemu pada tahun 2015 sebagai teman satu regu saat masa orientasi siswa Sekolah Menengah Kejuruan."
     },
     {
-      "image_url": "https://slametandfatma.wedding/galeri/story2.jpg",
+      "image_url": "/images/gallery/_AW_4467.JPG.jpeg",
       "title": "Episode 2: A Love That Grows With Time",
       "description": "Selama 1 tahun berteman, akhirnya mereka menyadari bahwa perasaan yang mereka miliki satu sama lain bukan hanya sebatas teman sekolah belaka, melainkan..."
     },
     {
-      "image_url": "https://slametandfatma.wedding/galeri/story3.jpeg",
+      "image_url": "/images/gallery/_AW_4593.JPG.jpeg",
       "title": "Episode 3: Choose to Spend Life Together",
-      "description": "Setelah 8 tahun lebih menjalin hubungan, pada Desember 2024 Slamet menyampaikan niatnya untuk melamar Fatma."
+      "description": "Setelah 8 tahun lebih menjalin hubungan, pada Desember 2024 Wahyu menyampaikan niatnya untuk melamar Resti."
     },
     {
-      "image_url": "https://slametandfatma.wedding/galeri/story4.jpeg",
+      "image_url": "/images/gallery/_AW_4655.JPG.jpeg",
       "title": "[Coming Soon] Final Episode: The Beginning of Forever",
-      "description": "Ketika hari H itu datang, Slamet dan Fatma akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
+      "description": "Ketika hari H itu datang, Resti dan Wahyu akan berbagi kisah haru mereka di sini. Sampai bertemu lagi di cerita bahagia selanjutnya!"
     }
   ],
   "gallery": [
-    "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/6.jpg",
-    "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/1.jpg",
-    "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/2.jpg",
-    "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/4.jpg",
-    "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/5%20(1).jpg",
-    "https://ypmnoiirxuqyierdbwkl.supabase.co/storage/v1/object/public/foto%20dan%20vid/7.jpg"
+    "/images/gallery/_AW_4373.JPG.jpeg",
+    "/images/gallery/_AW_4428.JPG.jpeg",
+    "/images/gallery/_AW_4439.JPG.jpeg",
+    "/images/gallery/_AW_4467.JPG.jpeg",
+    "/images/gallery/_AW_4527.JPG.jpeg",
+    "/images/gallery/_AW_4571.JPG.jpeg",
+    "/images/gallery/_AW_4593.JPG.jpeg",
+    "/images/gallery/_AW_4655.JPG.jpeg",
+    "/images/gallery/IMG_8238.JPG.jpeg"
   ],
   "show_menu": {
     "breaking_news": true,

@@ -27,10 +27,11 @@ export default function DetailInfo() {
         <div className="text-center pb-4">
           <div className="mb-2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.55062366104974!2d106.9215773242838!3d-6.913309575122753!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6849e78f83e5d5%3A0x174b757daacabcd3!2sMasjid%20Al%20Mutaqin!5e0!3m2!1sid!2sid!4v1758269299081!5m2!1sid!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0!2d106.9339224!3d-6.9292253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68499392fd9211%3A0x7560b4ee773e99c5!2sBidan%20Ika%20Kartika!5e0!3m2!1sid!2sid!4v1716000000000!5m2!1sid!2sid"
               style={{
                 border: 0,
                 width: '100%',
+                height: '300px',
               }}
               allowFullScreen=""
               loading="lazy"
@@ -39,7 +40,7 @@ export default function DetailInfo() {
           </div>
           <a
             className="text-center underline"
-            href="https://maps.app.goo.gl/QeGYjMNf12dYQZAZ9"
+            href="https://maps.app.goo.gl/X4u3TaUeiEmXZWtFA"
             target="_blank"
             rel="noopener noreferrer"
           >
