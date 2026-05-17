@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Link Undangan - Resti & Wahyu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .result {
+            display: none;
+            background: #f8f9fa;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .result.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .link-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            word-break: break-all;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            color: #667eea;
+            margin-bottom: 15px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .btn-copy {
+            background: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .btn-copy:hover {
+            background: #218838;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1da851;
+        }
+
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 10px;
+            border: 1px solid #c3e6cb;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .examples {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .examples h3 {
+            color: #856404;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .examples ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .examples li {
+            color: #856404;
+            font-size: 13px;
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .examples li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎊 Generator Link Undangan</h1>
+        <p class="subtitle">Resti & Wahyu - 6 Juni 2026</p>
+
+        <div class="form-group">
+            <label for="guestName">Nama Tamu / Keluarga:</label>
+            <input 
+                type="text" 
+                id="guestName" 
+                placeholder="Contoh: Bapak Budi, Keluarga Pak Ahmad, dll"
+                autocomplete="off"
+            >
+        </div>
+
+        <button class="btn" onclick="generateLink()">🔗 Generate Link</button>
+
+        <div class="result" id="result">
+            <div class="result-label">Link Undangan:</div>
+            <div class="link-box" id="generatedLink"></div>
+            
+            <button class="btn btn-copy" onclick="copyLink()">📋 Copy Link</button>
+            <button class="btn btn-whatsapp" onclick="shareWhatsApp()">💬 Share via WhatsApp</button>
+            
+            <div class="success-message" id="successMessage">
+                ✓ Link berhasil dicopy!
+            </div>
+        </div>
+
+        <div class="examples">
+            <h3>💡 Contoh Nama Tamu:</h3>
+            <ul>
+                <li>Bapak Budi</li>
+                <li>Ibu Siti Nurhaliza</li>
+                <li>Keluarga Besar Pak Ahmad</li>
+                <li>Bapak dan Ibu Santoso</li>
+                <li>Teman Kantor Wahyu</li>
+                <li>Om Tante Jakarta</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            Made with ❤️ for Resti & Wahyu
+        </div>
+    </div>
+
+    <script>
+        const baseURL = 'https://undangan-resti-wahyu.vercel.app/';
+        let currentLink = '';
+
+        // Auto focus on input
+        document.getElementById('guestName').focus();
+
+        // Generate link on Enter key
+        document.getElementById('guestName').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                generateLink();
+            }
+        });
+
+        function generateLink() {
+            const guestName = document.getElementById('guestName').value.trim();
+            
+            if (!guestName) {
+                alert('⚠️ Mohon masukkan nama tamu terlebih dahulu!');
+                return;
+            }
+
+            // Encode nama tamu untuk URL
+            const encodedName = encodeURIComponent(guestName);
+            currentLink = baseURL + '?to=' + encodedName;
+
+            // Tampilkan hasil
+            document.getElementById('generatedLink').textContent = currentLink;
+            document.getElementById('result').classList.add('show');
+            
+            // Hide success message
+            document.getElementById('successMessage').classList.remove('show');
+        }
+
+        function copyLink() {
+            if (!currentLink) return;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(currentLink).then(function() {
+                // Show success message
+                const successMsg = document.getElementById('successMessage');
+                successMsg.classList.add('show');
+                
+                // Hide after 2 seconds
+                setTimeout(function() {
+                    successMsg.classList.remove('show');
+                }, 2000);
+            }).catch(function(err) {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = currentLink;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                const successMsg = document.getElementById('successMessage');
+                successMsg.classList.add('show');
+                setTimeout(function() {
+                    successMsg.classList.remove('show');
+                }, 2000);
+            });
+        }
+
+        function shareWhatsApp() {
+            if (!currentLink) return;
+
+            const guestName = document.getElementById('guestName').value.trim();
+            const message = `Kepada Yth.
+Bapak/Ibu/Saudara/i
+${guestName}
+____________________
+
+Assalamualaikum Warahmatullahi Wabarakatuh
+
+Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i ${guestName}, untuk menghadiri acara pernikahan kami.
+
+Berikut link undangan kami, untuk info lengkap dari acara, bisa kunjungi :
+
+${currentLink}
+
+Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.
+
+Wassalamualaikum Warahmatullahi Wabarakatuh
+
+Terima Kasih
+
+Hormat kami,
+Resti & Wahyu`;
+
+            const whatsappURL = 'https://wa.me/?text=' + encodeURIComponent(message);
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
