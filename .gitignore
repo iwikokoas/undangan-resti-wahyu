@@ -16,6 +16,12 @@ dist-ssr
 .env.*
 !.env.example
 
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -27,3 +33,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel
+.env*.local
